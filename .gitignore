@@ -6,3 +6,4 @@ Homestead.json
 .env
 sublime-gulp.log
 npm-debug.log*
+.idea/
