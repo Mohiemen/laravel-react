@@ -4,7 +4,7 @@ import React from 'react'
 import jQuery from 'jquery'
 
 import { browserHistory } from 'react-router'
-import { Nav, NavItem } from 'react-bootstrap'
+import { Nav, NavItem, Glyphicon } from 'react-bootstrap'
 
 export default class NewsIndex extends React.Component {
 	constructor(props) {
@@ -37,9 +37,15 @@ export default class NewsIndex extends React.Component {
 					<div className="col-md-3" style={{marginTop:16,marginBottom:16}}>
 						<Nav bsStyle="pills" stacked  
 							activeHref={this.state.activeHref} onSelect={this.handleSelect.bind(this)}>
-							<NavItem href="/news/articles/create">Create Article</NavItem>
-							<NavItem href="/news/categories/create">Create Category</NavItem>
-							<NavItem href="/news/tags/create">Create Tag</NavItem>
+							<NavItem href="/news/articles/create">
+								<Glyphicon glyph="list-alt" /> &nbsp; Create Article
+							</NavItem>
+							<NavItem href="/news/categories/create">
+								<Glyphicon glyph="bookmark" /> &nbsp; Create Category
+							</NavItem>
+							<NavItem href="/news/tags/create">
+								<Glyphicon glyph="tags" /> &nbsp; Create Tag
+							</NavItem>
 						</Nav>
 					</div>
 					<div className="col-md-9">

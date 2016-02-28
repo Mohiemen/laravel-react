@@ -18,5 +18,6 @@ elixir(function(mix) {
     	.browserSync({
     		proxy: 'bromate.app',
     		files: ['public/**/*.js','public/**/*.css']
-    	});
+    	})
+    	.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/fonts/bootstrap');
 });

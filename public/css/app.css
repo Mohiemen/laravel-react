@@ -6911,30 +6911,33 @@ body {
 
 .app-inner {
   width: 100%;
-  background-color: #fdfdfd; }
+  background: #fdfdfd; }
 
-.main .container {
-  height: 100%;
-  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 12px -4px rgba(200, 200, 200, 0.5), -12px 0 12px -4px rgba(200, 200, 200, 0.5);
-  padding-bottom: 24px; }
-
-.main .quill {
-  margin-bottom: 26px; }
-  .main .quill .quill-contents.ql-container {
-    border: 1px solid rgba(200, 200, 200, 0.5);
-    height: auto; }
-    .main .quill .quill-contents.ql-container .ql-editor {
-      min-height: 330px; }
+.main {
+  background: #e1e1e1; }
+  .main .container {
+    height: 100%;
+    box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 12px -4px rgba(200, 200, 200, 0.5), -12px 0 12px -4px rgba(200, 200, 200, 0.5);
+    padding-bottom: 24px;
+    background: white; }
+  .main .quill {
+    margin-bottom: 26px; }
+    .main .quill .quill-contents.ql-container {
+      border: 1px solid rgba(200, 200, 200, 0.5);
+      height: auto; }
+      .main .quill .quill-contents.ql-container .ql-editor {
+        min-height: 330px; }
 
 .dropzone {
   width: 100%;
   min-height: 100px;
+  font-weight: 600;
   background: #f5f7ff;
   border: 2px solid #646e9b;
   border-radius: 12px;
   text-align: center;
-  line-height: 34px;
-  font-size: 18px;
+  line-height: 24px;
+  font-size: 16px;
   padding: 16px;
   color: #646e9b; }
   .dropzone * {
@@ -6948,7 +6951,6 @@ footer {
   padding: 16px;
   vertical-align: middle;
   background-color: #222222;
-  color: #fff;
-  margin-top: 8px; }
+  color: #fff; }
 
 /*# sourceMappingURL=app.css.map */
