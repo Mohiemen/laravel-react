@@ -61542,103 +61542,107 @@ var Index = function (_React$Component) {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
-				_reactBootstrap.Grid,
-				null,
+				'div',
+				{ className: 'main' },
 				_react2.default.createElement(
-					_reactBootstrap.Row,
+					_reactBootstrap.Grid,
 					null,
 					_react2.default.createElement(
-						_reactBootstrap.Col,
-						{ xs: 12 },
+						_reactBootstrap.Row,
+						null,
 						_react2.default.createElement(
-							_reactBootstrap.PageHeader,
-							null,
-							'Bromate ',
+							_reactBootstrap.Col,
+							{ xs: 12 },
 							_react2.default.createElement(
-								'small',
+								_reactBootstrap.PageHeader,
 								null,
-								'React. XHP. Hack. Laravel. Simple.'
+								'Bromate ',
+								_react2.default.createElement(
+									'small',
+									null,
+									'React. XHP. Hack. Laravel. Simple.'
+								)
 							)
 						)
-					)
-				),
-				_react2.default.createElement(
-					_reactBootstrap.Row,
-					null,
+					),
 					_react2.default.createElement(
-						_reactBootstrap.Col,
-						{ md: 6 },
+						_reactBootstrap.Row,
+						null,
 						_react2.default.createElement(
-							_reactBootstrap.Panel,
-							{ header: 'What is Bromate?' },
+							_reactBootstrap.Col,
+							{ md: 6 },
+							_react2.default.createElement(
+								_reactBootstrap.Panel,
+								{ header: 'What is Bromate?' },
+								_react2.default.createElement(
+									'p',
+									null,
+									_react2.default.createElement(
+										'b',
+										null,
+										'Bromate'
+									),
+									' is an all-inclusive development stack that encompasses React, React-Router, Bootstrap, and Laravel with Hack+HHVM.',
+									_react2.default.createElement(
+										'b',
+										null,
+										'Bromate'
+									),
+									' makes use of the newest technologies and methods to bring you a stack that is easy to develop with. Live on the bleeding edge. We\'ll protect you from breaking changes.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactBootstrap.Col,
+							{ md: 6 },
+							_react2.default.createElement(
+								_reactBootstrap.Panel,
+								{ header: 'Why Bromate?' },
+								_react2.default.createElement(
+									'b',
+									null,
+									'Bromate'
+								),
+								' covers all the bases. Stop spending time configuring your dependencies and start coding now.',
+								_react2.default.createElement(
+									'b',
+									null,
+									'Bromate'
+								),
+								' supports Hack & XHP, allowing you to do things asynchronously and waste less energy.'
+							)
+						)
+					),
+					_react2.default.createElement('hr', null),
+					_react2.default.createElement(
+						_reactBootstrap.Row,
+						null,
+						_react2.default.createElement(
+							_reactBootstrap.Col,
+							{ md: 4 },
 							_react2.default.createElement(
 								'p',
 								null,
-								_react2.default.createElement(
-									'b',
-									null,
-									'Bromate'
-								),
-								' is an all-inclusive development stack that encompasses React, React-Router, Bootstrap, and Laravel with Hack+HHVM.',
-								_react2.default.createElement(
-									'b',
-									null,
-									'Bromate'
-								),
-								' makes use of the newest technologies and methods to bring you a stack that is easy to develop with. Live on the bleeding edge. We\'ll protect you from breaking changes.'
+								'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque viverra elit, et ornare quam placerat in. Pellentesque nulla massa, lobortis semper dapibus vel, convallis non massa. Quisque porttitor scelerisque enim, at ornare dolor semper quis. Praesent nec odio facilisis, bibendum dui et, porta ex. Aliquam vel urna pellentesque, iaculis velit id, iaculis enim. Aenean ultrices nibh ut purus congue eleifend. Nulla consequat feugiat odio, id sagittis turpis porttitor quis. Quisque rutrum posuere magna, quis suscipit nibh pretium eget. Integer eu semper dolor, at laoreet purus. Duis vitae cursus ipsum. Maecenas eu ex mi.'
 							)
-						)
-					),
-					_react2.default.createElement(
-						_reactBootstrap.Col,
-						{ md: 6 },
+						),
 						_react2.default.createElement(
-							_reactBootstrap.Panel,
-							{ header: 'Why Bromate?' },
+							_reactBootstrap.Col,
+							{ md: 4 },
 							_react2.default.createElement(
-								'b',
+								'p',
 								null,
-								'Bromate'
-							),
-							' covers all the bases. Stop spending time configuring your dependencies and start coding now.',
+								'Proin turpis ante, fermentum et ante et, pharetra maximus tellus. Aliquam eros ipsum, scelerisque eget urna at, aliquet rhoncus ante. Donec consequat libero arcu. Vivamus magna purus, faucibus mattis sem et, vehicula tempus ex. Praesent cursus porttitor turpis, at dapibus nulla ultrices vitae. Vivamus venenatis nibh odio, eu pulvinar lacus pharetra nec. Quisque sed dapibus quam. Aenean porttitor, odio eu vehicula lobortis, leo nulla cursus arcu, eget sollicitudin neque justo a felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque posuere sapien tellus, non dignissim mi egestas ut. Aliquam aliquam odio quis tellus fringilla, sit amet posuere lorem viverra. Nulla sed ligula viverra, ullamcorper purus eu, iaculis erat. In hac habitasse platea dictumst. Morbi et lectus ex. Mauris eu dictum nisl.'
+							)
+						),
+						_react2.default.createElement(
+							_reactBootstrap.Col,
+							{ md: 4 },
 							_react2.default.createElement(
-								'b',
+								'p',
 								null,
-								'Bromate'
-							),
-							' supports Hack & XHP, allowing you to do things asynchronously and waste less energy.'
-						)
-					)
-				),
-				_react2.default.createElement('hr', null),
-				_react2.default.createElement(
-					_reactBootstrap.Row,
-					null,
-					_react2.default.createElement(
-						_reactBootstrap.Col,
-						{ md: 4 },
-						_react2.default.createElement(
-							'p',
-							null,
-							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque viverra elit, et ornare quam placerat in. Pellentesque nulla massa, lobortis semper dapibus vel, convallis non massa. Quisque porttitor scelerisque enim, at ornare dolor semper quis. Praesent nec odio facilisis, bibendum dui et, porta ex. Aliquam vel urna pellentesque, iaculis velit id, iaculis enim. Aenean ultrices nibh ut purus congue eleifend. Nulla consequat feugiat odio, id sagittis turpis porttitor quis. Quisque rutrum posuere magna, quis suscipit nibh pretium eget. Integer eu semper dolor, at laoreet purus. Duis vitae cursus ipsum. Maecenas eu ex mi.'
-						)
-					),
-					_react2.default.createElement(
-						_reactBootstrap.Col,
-						{ md: 4 },
-						_react2.default.createElement(
-							'p',
-							null,
-							'Proin turpis ante, fermentum et ante et, pharetra maximus tellus. Aliquam eros ipsum, scelerisque eget urna at, aliquet rhoncus ante. Donec consequat libero arcu. Vivamus magna purus, faucibus mattis sem et, vehicula tempus ex. Praesent cursus porttitor turpis, at dapibus nulla ultrices vitae. Vivamus venenatis nibh odio, eu pulvinar lacus pharetra nec. Quisque sed dapibus quam. Aenean porttitor, odio eu vehicula lobortis, leo nulla cursus arcu, eget sollicitudin neque justo a felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque posuere sapien tellus, non dignissim mi egestas ut. Aliquam aliquam odio quis tellus fringilla, sit amet posuere lorem viverra. Nulla sed ligula viverra, ullamcorper purus eu, iaculis erat. In hac habitasse platea dictumst. Morbi et lectus ex. Mauris eu dictum nisl.'
-						)
-					),
-					_react2.default.createElement(
-						_reactBootstrap.Col,
-						{ md: 4 },
-						_react2.default.createElement(
-							'p',
-							null,
-							'Morbi placerat mollis consequat. In ornare urna tristique facilisis lobortis. Nulla vel tellus ultricies, vulputate diam sit amet, aliquet erat. Nam scelerisque magna id ex porttitor varius. Donec quis facilisis nibh. Curabitur non tortor magna. Sed vel tortor dui. Phasellus eu felis ut est consequat commodo in quis lectus. Curabitur mauris ex, cursus sit amet iaculis ultrices, ornare a libero. Morbi at vestibulum erat, at condimentum lacus. Vivamus vehicula nisl vel tempor congue. Nunc tellus arcu, pharetra eu mi nec, luctus aliquam nisl. In ac sagittis metus.'
+								'Morbi placerat mollis consequat. In ornare urna tristique facilisis lobortis. Nulla vel tellus ultricies, vulputate diam sit amet, aliquet erat. Nam scelerisque magna id ex porttitor varius. Donec quis facilisis nibh. Curabitur non tortor magna. Sed vel tortor dui. Phasellus eu felis ut est consequat commodo in quis lectus. Curabitur mauris ex, cursus sit amet iaculis ultrices, ornare a libero. Morbi at vestibulum erat, at condimentum lacus. Vivamus vehicula nisl vel tempor congue. Nunc tellus arcu, pharetra eu mi nec, luctus aliquam nisl. In ac sagittis metus.'
+							)
 						)
 					)
 				)
@@ -61675,6 +61679,8 @@ var _jquery2 = _interopRequireDefault(_jquery);
 var _reactDropzone = require('react-dropzone');
 
 var _reactDropzone2 = _interopRequireDefault(_reactDropzone);
+
+var _reactBootstrap = require('react-bootstrap');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -61778,63 +61784,46 @@ var NewsArticlesCreate = function (_React$Component) {
 				'div',
 				{ className: 'main' },
 				_react2.default.createElement(
-					'div',
-					{ className: 'container' },
+					'form',
+					{ role: 'form', id: 'news-article-create' },
 					_react2.default.createElement(
-						'h1',
+						_reactBootstrap.Grid,
 						null,
-						'Create News Article'
-					),
-					_react2.default.createElement('hr', null),
-					_react2.default.createElement(
-						'form',
-						{ role: 'form', id: 'news-article-create' },
 						_react2.default.createElement(
-							'div',
-							{ className: 'row' },
+							_reactBootstrap.Row,
+							null,
 							_react2.default.createElement(
-								'div',
-								{ className: 'form-group col-md-4' },
+								_reactBootstrap.Col,
+								{ xs: 12 },
 								_react2.default.createElement(
-									'label',
-									{ htmlFor: 'title' },
-									'Article Title'
+									'h1',
+									null,
+									'Create News Article'
 								),
-								_react2.default.createElement('input', { type: 'text', id: 'title', className: 'form-control',
+								_react2.default.createElement('hr', null)
+							)
+						),
+						_react2.default.createElement(
+							_reactBootstrap.Row,
+							null,
+							_react2.default.createElement(
+								_reactBootstrap.Col,
+								{ md: 4, className: 'form-group' },
+								_react2.default.createElement(_reactBootstrap.Input, { type: 'text', label: 'Article Title', placeholder: 'Enter a Title',
 									onBlur: this.onTitleChange.bind(this) })
 							),
 							_react2.default.createElement(
-								'div',
-								{ className: 'form-group col-md-4' },
-								_react2.default.createElement(
-									'label',
-									{ htmlFor: 'slug' },
-									'Article URL'
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'input-group' },
-									_react2.default.createElement(
-										'span',
-										{ className: 'input-group-addon' },
-										window.base_url,
-										'/article/'
-									),
-									_react2.default.createElement('input', { type: 'text', id: 'slug', value: this.state.slug,
-										className: 'form-control', disabled: true })
-								)
+								_reactBootstrap.Col,
+								{ md: 4, className: 'form-group' },
+								_react2.default.createElement(_reactBootstrap.Input, { type: 'text', id: 'slug', value: this.state.slug, disabled: true,
+									label: 'Article URL', addonBefore: window.base_url + "/article" })
 							),
 							_react2.default.createElement(
-								'div',
-								{ className: 'form-group col-md-4' },
+								_reactBootstrap.Col,
+								{ md: 4, className: 'form-group' },
 								_react2.default.createElement(
-									'label',
-									{ htmlFor: 'category' },
-									'Category'
-								),
-								_react2.default.createElement(
-									'select',
-									{ id: 'category', defaultValue: 0, className: 'form-control' },
+									_reactBootstrap.Input,
+									{ type: 'select', label: 'Category' },
 									_react2.default.createElement(
 										'option',
 										{ value: 0 },
@@ -61851,21 +61840,16 @@ var NewsArticlesCreate = function (_React$Component) {
 							)
 						),
 						_react2.default.createElement(
-							'div',
-							{ className: 'row' },
+							_reactBootstrap.Row,
+							null,
 							_react2.default.createElement(
-								'div',
-								{ className: 'col-md-9' },
+								_reactBootstrap.Col,
+								{ md: 9 },
 								_react2.default.createElement(
 									'div',
 									{ className: 'form-group' },
-									_react2.default.createElement(
-										'label',
-										{ htmlFor: 'excerpt' },
-										'Excerpt'
-									),
-									_react2.default.createElement('textarea', { id: 'excerpt', rows: 3, className: 'form-control',
-										placeholder: 'If left blank, excerpt will be populated automatically.' })
+									_react2.default.createElement(_reactBootstrap.Input, { type: 'textarea', label: 'Excerpt', rows: 3,
+										placeholder: 'If left blank, excerpt will be populated automatically' })
 								),
 								_react2.default.createElement(
 									'div',
@@ -61880,8 +61864,8 @@ var NewsArticlesCreate = function (_React$Component) {
 								)
 							),
 							_react2.default.createElement(
-								'div',
-								{ className: 'col-md-3' },
+								_reactBootstrap.Col,
+								{ md: 3 },
 								_react2.default.createElement(
 									'div',
 									{ className: 'panel panel-default' },
@@ -61900,15 +61884,15 @@ var NewsArticlesCreate = function (_React$Component) {
 										'div',
 										{ className: 'panel-body' },
 										_react2.default.createElement(
-											'button',
-											{ className: 'btn btn-primary btn-block' },
-											_react2.default.createElement('i', { className: 'fa fa-calendar' }),
+											_reactBootstrap.Button,
+											{ block: true },
+											_react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'calendar' }),
 											'   Revision History'
 										),
 										_react2.default.createElement(
-											'button',
-											{ className: 'btn btn-default btn-block' },
-											_react2.default.createElement('i', { className: 'fa fa-eye' }),
+											_reactBootstrap.Button,
+											{ block: true },
+											_react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'eye-open' }),
 											'   Preview Article'
 										)
 									)
@@ -61993,21 +61977,12 @@ var NewsArticlesCreate = function (_React$Component) {
 									),
 									_react2.default.createElement(
 										'div',
-										{ className: 'panel-body' },
+										{ className: 'panel-body text-center' },
+										_react2.default.createElement(_reactBootstrap.Input, { type: 'checkbox', label: 'Show on homepage?' }),
 										_react2.default.createElement(
-											'div',
-											{ className: 'checkbox' },
-											_react2.default.createElement(
-												'label',
-												null,
-												_react2.default.createElement('input', { id: 'homepage', type: 'checkbox', value: '1' }),
-												'Show on Homepage?'
-											)
-										),
-										_react2.default.createElement(
-											'button',
-											{ type: 'submit', className: 'btn btn-success btn-block' },
-											_react2.default.createElement('i', { className: 'fa fa-plus' }),
+											_reactBootstrap.Button,
+											{ type: 'submit', bsStyle: 'success', block: true },
+											_react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'plus' }),
 											' Create Article'
 										)
 									)
@@ -62025,7 +62000,7 @@ var NewsArticlesCreate = function (_React$Component) {
 
 exports.default = NewsArticlesCreate;
 
-},{"jquery":113,"react":465,"react-dropzone":271,"react-quill":297}],475:[function(require,module,exports){
+},{"jquery":113,"react":465,"react-bootstrap":258,"react-dropzone":271,"react-quill":297}],475:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62112,17 +62087,20 @@ var NewsIndex = function (_React$Component) {
 							_react2.default.createElement(
 								_reactBootstrap.NavItem,
 								{ href: '/news/articles/create' },
-								'Create Article'
+								_react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'list-alt' }),
+								'   Create Article'
 							),
 							_react2.default.createElement(
 								_reactBootstrap.NavItem,
 								{ href: '/news/categories/create' },
-								'Create Category'
+								_react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'bookmark' }),
+								'   Create Category'
 							),
 							_react2.default.createElement(
 								_reactBootstrap.NavItem,
 								{ href: '/news/tags/create' },
-								'Create Tag'
+								_react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'tags' }),
+								'   Create Tag'
 							)
 						)
 					),
@@ -62544,17 +62522,20 @@ var UINavbar = function (_React$Component) {
 						_react2.default.createElement(
 							_reactBootstrap.NavItem,
 							{ eventKey: 1, href: '/' },
-							'Home'
+							_react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'home' }),
+							'   Home'
 						),
 						_react2.default.createElement(
 							_reactBootstrap.NavItem,
 							{ eventKey: 2, href: '/users' },
-							'Users'
+							_react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'user' }),
+							'   Users'
 						),
 						_react2.default.createElement(
 							_reactBootstrap.NavItem,
 							{ eventKey: 3, href: '/news' },
-							'News'
+							_react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'bullhorn' }),
+							'   News'
 						)
 					)
 				)

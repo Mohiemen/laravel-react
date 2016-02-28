@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Glyphicon } from 'react-bootstrap';
 import { browserHistory } from 'react-router';
 
 export default class UINavbar extends React.Component {
@@ -32,9 +32,15 @@ export default class UINavbar extends React.Component {
 				</Navbar.Header>
 				<Navbar.Collapse>
 					<Nav activeHref={this.state.activeHref} onSelect={this.handleSelect.bind(this)}>
-						<NavItem eventKey={1} href="/">Home</NavItem>
-						<NavItem eventKey={2} href="/users">Users</NavItem>
-						<NavItem eventKey={3} href="/news">News</NavItem>
+						<NavItem eventKey={1} href="/">
+							<Glyphicon glyph="home" /> &nbsp; Home
+						</NavItem>
+						<NavItem eventKey={2} href="/users">
+							<Glyphicon glyph="user" /> &nbsp; Users
+						</NavItem>
+						<NavItem eventKey={3} href="/news">
+							<Glyphicon glyph="bullhorn" /> &nbsp; News
+						</NavItem>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

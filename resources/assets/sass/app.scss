@@ -16,10 +16,11 @@ body { background-color: $gray-dark; }
 }
 .app-inner {
 	width: 100%;
-	background-color: rgb(253,253,253);
+	background: rgb(253,253,253);
 }
 
 .main {
+	background: rgb(225,225,225);
 	.container {
 		height: 100%;
 		box-shadow: 0 9px 0px 0px white, 
@@ -28,6 +29,7 @@ body { background-color: $gray-dark; }
 			-12px 0 12px -4px rgba(200, 200, 200, 0.5)
 		;
 		padding-bottom: 24px;
+		background: rgb(255,255,255);
 	}
 
 	.quill {
@@ -45,12 +47,13 @@ body { background-color: $gray-dark; }
 .dropzone {
 	width: 100%;
 	min-height: 100px;
+	font-weight: 600;
 	background: rgb(245,247,255);
 	border: 2px solid rgb(100,110,155);
 	border-radius: 12px;
 	text-align: center;
-	line-height: 34px;
-	font-size: 18px;
+	line-height: 24px;
+	font-size: 16px;
 	padding: 16px;
 	color: rgb(100,110,155);
 	* {
@@ -68,5 +71,4 @@ footer {
     vertical-align: middle;
     background-color: $gray-darker;
     color: #fff;
-    margin-top: 8px;
 }

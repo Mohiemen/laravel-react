@@ -4,6 +4,7 @@ import React from 'react'
 import ReactQuill from 'react-quill'
 import jQuery from 'jquery'
 import Dropzone from 'react-dropzone'
+import { PageHeader, Col, Row, Grid, Panel, Input, Button, Glyphicon } from 'react-bootstrap'
 
 export default class NewsArticlesCreate extends React.Component {
 	constructor(props) {
@@ -80,43 +81,37 @@ export default class NewsArticlesCreate extends React.Component {
 	render() {
 		return (
 			<div className="main">
-				<div className="container">
-					<h1>Create News Article</h1>
-					<hr/>
-					<form role="form" id="news-article-create">
-						<div className="row">
-							<div className="form-group col-md-4">
-								<label htmlFor="title">Article Title</label>
-								<input type="text" id="title" className="form-control" 
-									onBlur={this.onTitleChange.bind(this)}/>
-							</div>
-							<div className="form-group col-md-4">
-								<label htmlFor="slug">Article URL</label>
-								<div className="input-group">
-									<span className="input-group-addon">
-										{window.base_url}/article/
-									</span>
-									<input type="text" id="slug" value={this.state.slug} 
-										className="form-control" disabled />
-								</div>
-							</div>
-							<div className="form-group col-md-4">
-								<label htmlFor="category">Category</label>
-								<select id="category" defaultValue={0} className="form-control">
+				<form role="form" id="news-article-create">
+					<Grid>
+						<Row>
+							<Col xs={12}>
+								<h1>Create News Article</h1>
+								<hr/>
+							</Col>
+						</Row>
+						<Row>
+							<Col md={4} className="form-group">
+								<Input type="text" label="Article Title" placeholder="Enter a Title"
+									onBlur={this.onTitleChange.bind(this)} />
+							</Col>
+							<Col md={4} className="form-group">
+								<Input type="text" id="slug" value={this.state.slug} disabled
+									label="Article URL" addonBefore={window.base_url + "/article"} />
+							</Col>
+							<Col md={4} className="form-group">
+								<Input type="select" label="Category">
 									<option value={0}>General News</option>
 									{this.state.categories.map(function(category) {
 										return (<option value={category.id}>{category.title}</option>);
 									})}
-								</select>
-							</div>
-						</div>
-						<div className="row">
-							<div className="col-md-9">
+								</Input>
+							</Col>
+						</Row>
+						<Row>
+							<Col md={9}>
 								<div className="form-group">
-									<label htmlFor="excerpt">Excerpt</label>
-									<textarea id="excerpt" rows={3} className="form-control"
-										placeholder="If left blank, excerpt will be populated automatically.">
-									</textarea>
+									<Input type="textarea" label="Excerpt" rows={3} 
+										placeholder="If left blank, excerpt will be populated automatically" />
 								</div>
 
 								<div className="form-group">
@@ -124,19 +119,19 @@ export default class NewsArticlesCreate extends React.Component {
 									<ReactQuill styles={{height:300}} id="editor" theme='snow' 
 										value={this.state.content} onChange={this.onTextChange} />
 								</div>
-							</div>
-							<div className="col-md-3">
+							</Col>
+							<Col md={3}>
 								<div className="panel panel-default">
 									<div className="panel-heading">
 										<i className="fa fa-web"></i> <strong>Draft Options</strong>
 									</div>
 									<div className="panel-body">
-										<button className="btn btn-primary btn-block">
-											<i className="fa fa-calendar"></i> &nbsp; Revision History
-										</button>
-										<button className="btn btn-default btn-block">
-											<i className="fa fa-eye"></i> &nbsp; Preview Article
-										</button>
+										<Button block>
+											<Glyphicon glyph="calendar" /> &nbsp; Revision History
+										</Button>
+										<Button block>
+											<Glyphicon glyph="eye-open" /> &nbsp; Preview Article
+										</Button>
 									</div>
 								</div>
 
@@ -181,22 +176,17 @@ export default class NewsArticlesCreate extends React.Component {
 									<div className="panel-heading">
 										<i className="fa fa-globe"></i> <strong>Publish Options</strong>
 									</div>
-									<div className="panel-body">
-										<div className="checkbox">
-											<label>
-												<input id="homepage" type="checkbox" value="1"/> 
-												Show on Homepage?
-											</label>
-										</div>
-										<button type="submit" className="btn btn-success btn-block">
-											<i className="fa fa-plus"></i> Create Article
-										</button>
+									<div className="panel-body text-center">
+										<Input type="checkbox" label="Show on homepage?" />
+										<Button type="submit" bsStyle="success" block>
+											<Glyphicon glyph="plus" /> Create Article
+										</Button>
 									</div>
 								</div>
-							</div>
-						</div>
-					</form>
-				</div>
+							</Col>
+						</Row>
+					</Grid>
+				</form>
 			</div>
 		)
 	}
