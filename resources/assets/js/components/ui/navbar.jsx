@@ -41,6 +41,9 @@ export default class UINavbar extends React.Component {
 						<NavItem eventKey={3} href="/news">
 							<Glyphicon glyph="bullhorn" /> &nbsp; News
 						</NavItem>
+						<NavItem eventKey={3} href="/login" className="pull-right">
+							<Glyphicon glyph="lock" /> &nbsp; Log In
+						</NavItem>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
