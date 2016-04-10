@@ -1,15 +1,13 @@
 'use strict';
-
 import React from 'react'
 import ReactQuill from 'react-quill'
-import jQuery from 'jquery'
 import Dropzone from 'react-dropzone'
-import { PageHeader, Col, Row, Grid, Panel, Input, Button, Glyphicon } from 'react-bootstrap'
+import Debouncer from '../../../utilities/debouncer.jsx'
+import { Col, Row, Grid, Input, Button, Glyphicon } from 'react-bootstrap'
 
-export default class NewsArticlesCreate extends React.Component {
+export default class NewsArticlesCreate extends Debouncer {
     constructor(props) {
         super(props);
-
         this.state = {
             categories: [],
             content: '',
@@ -21,8 +19,9 @@ export default class NewsArticlesCreate extends React.Component {
             titleWaiting: false
         };
 
-        this.onTitleChange.bind(this);
-        this.debounceTitleChange = _.debounce(this.onTitleChange, 250);
+        this.onTitleChange = this.debounce(this.onTitleChange.bind(this), 'onTitleChange', 1000);
+        this.onContentChange = this.onContentChange.bind(this);
+        this.onDrop = this.onDrop.bind(this);
     }
 
     onTitleChange(e) {
@@ -98,7 +97,7 @@ export default class NewsArticlesCreate extends React.Component {
                         <Row>
                             <Col md={4} className="form-group">
                                 <Input type="text" label="Article Title" placeholder="Enter a Title"
-                                       onKeyUp={this.debounceTitleChange} onBlur={this.debounceTitleChange}/>
+                                       onKeyUp={this.onTitleChange}/>
                             </Col>
                             <Col md={4} className="form-group">
                                 <Input type="text" id="slug" value={this.state.slug} disabled
@@ -109,7 +108,7 @@ export default class NewsArticlesCreate extends React.Component {
                                         )} />
                             </Col>
                             <Col md={4} className="form-group">
-                                <Input type="select" label="Category" value={0}>
+                                <Input type="select" label="Category" defaultValue={0}>
                                     <option value={0}>General News</option>
                                     {this.state.categories.map(function (category) {
                                         return (<option value={category.id}>{category.title}</option>);
